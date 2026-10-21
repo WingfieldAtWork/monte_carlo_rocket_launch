@@ -1,0 +1,26 @@
+vehicle:
+  name: "TwoStage-Orbital-Class"
+  dry_mass: 12000.0        # kg
+  propellant_mass: 150000.0 # kg
+  length: 35.0             # m
+  diameter: 3.0            # m
+  s_ref: 7.068             # m^2 (frontal area)
+  cg_dry: [14.0, 0.0, 0.0] # m from base
+  cg_wet: [19.0, 0.0, 0.0]
+  inertia_dry: [25000.0, 1200000.0, 1200000.0] # kg*m^2 [Ixx, Iyy, Izz]
+  inertia_wet: [85000.0, 8500000.0, 8500000.0]
+
+propulsion:
+  thrust_vac: 2200000.0    # N
+  isp_vac: 310.0           # s
+  exit_area: 1.25          # m^2
+  gimbal_limit_deg: 6.0    # deg
+  actuator_tau: 0.05       # s
+
+gnc:
+  pitch_kick_start_s: 5.0
+  pitch_kick_duration_s: 7.0
+  pitch_kick_rate_deg_s: 0.10
+  control_kp: 8.0
+  control_kd: 3.5
+

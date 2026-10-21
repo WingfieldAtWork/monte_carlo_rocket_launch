@@ -1,0 +1,10 @@
+# Monte Carlo Dispersion Configuration (3-sigma values for Gaussian distributions)
+dispersions:
+  thrust_vac_pct_3sigma: 2.0       # Engine Vacuum Thrust (+/- 2.0%, 3-sigma)
+  isp_vac_pct_3sigma: 1.5          # Specific Impulse (+/- 1.5%, 3-sigma)
+  drag_cd_pct_3sigma: 10.0         # Aerodynamic Drag Cd (+/- 10.0%, 3-sigma)
+  fuel_mass_pct_3sigma: 0.5        # Fuel Mass Loading (+/- 0.5%, 3-sigma)
+  wind_gust_max_mps: 25.0          # High-altitude wind gust maximum amplitude (up to 25 m/s)
+  wind_altitude_min_m: 6000.0      # Altitude where wind shear/gust begins
+  wind_altitude_max_m: 16000.0     # Altitude where wind shear/gust peaks
+
